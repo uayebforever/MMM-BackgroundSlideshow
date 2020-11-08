@@ -298,7 +298,9 @@ Module.register('MMM-BackgroundSlideshow', {
 
   createGradientDiv: function (direction, gradient, wrapper) {
     var div = document.createElement('div');
-    div.style.backgroundImage = 'linear-gradient( to ' + direction + ', ' + gradient.join() + ')';
+    // div.style.backgroundImage = 'linear-gradient( to ' + direction + ', ' + gradient.join() + ')';
+    // div.style.backgroundImage = 'radial-gradient( transparent 65%, rgba(0, 0, 0, 0.8) )';
+    div.style.backgroundColor = "rgba( 0, 0, 0, 0.35)";
     div.className = 'gradient';
     wrapper.appendChild(div);
   },
